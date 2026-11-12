@@ -2,6 +2,13 @@
 
 Emergency-first home-services finder for the US and Canada: safety-first emergency playbooks, self-updating cost guides, free tools and a lead-generation funnel that routes homeowner requests to local pros. Monetized with Google AdSense, pro leads, sponsorships, donation pledges and contest sponsorship.
 
+## Go live (two one-time steps, signed in as WEBWORKSA1)
+
+1. **Add the build workflow.** Create `.github/workflows/auto-update.yml` (Add file → Create new file) and paste the contents of [`build/auto-update.workflow.yml`](build/auto-update.workflow.yml). Committing it runs the first build: the workflow renders the PNG icons and share image, generates all 52 pages, the sitemap and the feed, and commits them to `main`. After that it rebuilds on every content change and refreshes prices every Monday.
+2. **Turn on GitHub Pages.** Settings → Pages → Build and deployment → Source: *Deploy from a branch* → Branch: `main` / `(root)` → Save. The site appears at https://webworksa1.github.io/expressfind-com/ within a few minutes.
+
+The workflow file has to be added from a signed-in GitHub session because third-party integrations need a separate permission to write workflow files.
+
 ## Structure
 
 | Path | What it is |
