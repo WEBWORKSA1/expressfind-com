@@ -1,0 +1,11 @@
+{
+  "factor": 1.0,
+  "label": "November 2026",
+  "data_label": null,
+  "baseline": null,
+  "latest": null,
+  "yoy_all": null,
+  "yoy_repair": null,
+  "checked": null,
+  "note": "Base cost ranges compiled November 2026. build/update_data.py records the first successful BLS CPI-U reading as the baseline and scales ranges by later changes."
+}
